@@ -12,7 +12,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="header d-flex justify-content-around">
+    <header class="header d-flex justify-content-between">
         <a href="index.html" class="logo">
             <figure>
                 <img src="images/logo.png" alt="logo">
@@ -22,35 +22,32 @@
             <nav>
                 <ul class="nav d-flex justify-content-between">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Про нас</a>
+                      <a class="nav-link" href="#" style="padding: 0;">Про нас</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Акції</a>
+                      <a class="nav-link" href="#" style="padding: 0;">Акції</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Доставка</a>
+                      <a class="nav-link" href="#" style="padding: 0;">Доставка</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Оплата</a>
+                        <a class="nav-link" href="#" style="padding: 0;">Оплата</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакти</a>
+                        <a class="nav-link" href="#" style="padding: 0;">Контакти</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">UA <img style="margin-left: 5px;" src="images/uk.png" alt="uk"></a>
+                        <a class="nav-link" href="#" style="padding: 0;">UA <img style="margin-left: 5px;" src="images/uk.png" alt="uk"></a>
                     </li>
                   </ul>
             </nav>
-            <div class="header_input_dropdown d-flex justify-content-between">
-                <button type="button" class="button_drop" data-toggle="dropdown"> <img style="margin-right: 17px;" src="images/iconForButtonDrop.png" alt="">
-                    Каталог
-                 </button>
-                 <div class="dropdown-menu">
-                   <a class="dropdown-item" href="#">Tablet</a>
-                   <a class="dropdown-item" href="#">Smartphone</a>
-                 </div>
-                <div class="header_input">
-                    <input type="text" placeholder="Пошук" class="input-find">
+            <div class="header_input_dropdown row d-flex justify-content-between"> <!--d-flex justify-content-between-->
+                <a class="button_drop col-4">
+                    <img style="margin-left: 5%;" src="images/iconForButtonDrop.png" alt="">
+                    <span style="margin-left: 5%;">Каталог</span>
+                </a>
+                <div class="header_input col-7">
+                    <input type="text" placeholder="Пошук" class="input-find ">
                 </div>
             </div>
         </div>
@@ -59,16 +56,16 @@
             <div class="d-flex header_icons">
                 <div style="position: relative; margin-right: 15px;">
                     <img src="images/icon_like.png" alt="like">
-                    <p style="position: absolute; top: 1px; left: 33px; font-size: 10px; color: #fff;">20</p>
+                    <p style="position: absolute; top: 1px; left: 33px; font-size: 10px; color: #fff;" onclick="">20</p>
                 </div>
                 <div style="position: relative; margin-right: 15px;">
                     <img src="images/icon_basket.png" alt="like">
-                    <p style="position: absolute; top: 1px; left: 36px; font-size: 10px; color: #fff;">2</p>
+                    <p style="position: absolute; top: 1px; left: 36px; font-size: 10px; color: #fff;" onclick="">2</p>
                 </div>
                 <div style="position: relative;">
                     <img src="images/icon_login.png" alt="like">
-                    <p style="position: absolute; top: 1px; left: 32px; font-size: 10px; color: #fff;">20</p>
                 </div>
+            </div>
         </div>
     </header>
     <main>
@@ -94,7 +91,7 @@
         <div class="block-4 d-flex justify-content-around">
             <div class="card-paraffin">
                 <figure>
-                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;">
+                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;" onclick="">
                     <img src="images/card_paraffin.png" alt="paraffin" style="width: 95%; margin-top: 97px;">
                 </figure>
                 <h3 style="color: #202B46; font-size: 24px; color: #202B46; margin-top: 39px;">Мікрокристалічний віск<br><span style="color: #5B5A5A; font-size: 24px; font-weight: 500;">500г</span></h3>
@@ -108,13 +105,13 @@
                     </div>
                     <p style="color: #5B5A5A; font-size: 16px; font-weight: 500;">(5 відгуків)</p>
                     <figure>
-                        <img src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;">
+                        <img class="icon_basket_card" src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;" onclick="">
                     </figure>
                 </div>
             </div>
             <div class="card-paraffin">
                 <figure>
-                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;">
+                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;" onclick="">
                     <img src="images/card_paraffin.png" alt="paraffin" style="width: 95%; margin-top: 97px;">
                 </figure>
                 <h3 style="color: #202B46; font-size: 24px; color: #202B46; margin-top: 39px;">Мікрокристалічний віск<br><span style="color: #5B5A5A; font-size: 24px; font-weight: 500;">500г</span></h3>
@@ -128,13 +125,13 @@
                     </div>
                     <p style="color: #5B5A5A; font-size: 16px; font-weight: 500;">(5 відгуків)</p>
                     <figure>
-                        <img src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;">
+                        <img class="icon_basket_card" src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;" onclick="">
                     </figure>
                 </div>
             </div>
             <div class="card-paraffin">
                 <figure>
-                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;">
+                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;" onclick="">
                     <img src="images/card_paraffin.png" alt="paraffin" style="width: 95%; margin-top: 97px;">
                 </figure>
                 <h3 style="color: #202B46; font-size: 24px; color: #202B46; margin-top: 39px;">Мікрокристалічний віск<br><span style="color: #5B5A5A; font-size: 24px; font-weight: 500;">500г</span></h3>
@@ -148,7 +145,7 @@
                     </div>
                     <p style="color: #5B5A5A; font-size: 16px; font-weight: 500;">(5 відгуків)</p>
                     <figure>
-                        <img src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;">
+                        <img class="icon_basket_card" src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;" onclick="">
                     </figure>
                 </div>
             </div>
@@ -168,7 +165,7 @@
         <div class="block-4 d-flex justify-content-around">
             <div class="card-paraffin">
                 <figure>
-                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;">
+                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;" onclick="">
                     <img src="images/card_paraffin.png" alt="paraffin" style="width: 95%; margin-top: 97px;">
                 </figure>
                 <h3 style="color: #202B46; font-size: 24px; color: #202B46; margin-top: 39px;">Мікрокристалічний віск<br><span style="color: #5B5A5A; font-size: 24px; font-weight: 500;">500г</span></h3>
@@ -182,13 +179,13 @@
                     </div>
                     <p style="color: #5B5A5A; font-size: 16px; font-weight: 500;">(5 відгуків)</p>
                     <figure>
-                        <img src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;">
+                        <img class="icon_basket_card" src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;" onclick="">
                     </figure>
                 </div>
             </div>
             <div class="card-paraffin">
                 <figure>
-                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;">
+                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;" onclick="">
                     <img src="images/card_paraffin.png" alt="paraffin" style="width: 95%; margin-top: 97px;">
                 </figure>
                 <h3 style="color: #202B46; font-size: 24px; color: #202B46; margin-top: 39px;">Мікрокристалічний віск<br><span style="color: #5B5A5A; font-size: 24px; font-weight: 500;">500г</span></h3>
@@ -202,13 +199,13 @@
                     </div>
                     <p style="color: #5B5A5A; font-size: 16px; font-weight: 500;">(5 відгуків)</p>
                     <figure>
-                        <img src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;">
+                        <img class="icon_basket_card" src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;" onclick="">
                     </figure>
                 </div>
             </div>
             <div class="card-paraffin">
                 <figure>
-                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;">
+                    <img class="icon_dont_like_card" src="images/icon_dont_like.png" alt="dont like" style="display: block;" onclick="">
                     <img src="images/card_paraffin.png" alt="paraffin" style="width: 95%; margin-top: 97px;">
                 </figure>
                 <h3 style="color: #202B46; font-size: 24px; color: #202B46; margin-top: 39px;">Мікрокристалічний віск<br><span style="color: #5B5A5A; font-size: 24px; font-weight: 500;">500г</span></h3>
@@ -222,7 +219,7 @@
                     </div>
                     <p style="color: #5B5A5A; font-size: 16px; font-weight: 500;">(5 відгуків)</p>
                     <figure>
-                        <img src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;">
+                        <img class="icon_basket_card" src="images/icon_basket_card.png" alt="backet" style="margin-top: -10px;" onclick="">
                     </figure>
                 </div>
             </div>
@@ -235,7 +232,7 @@
                 <a href="#"><p>Про нас</p></a>
                 <a href="#"><p>Акції</p></a>
                 <a href="#"><p>Доставка</p></a>
-                <a href="#"><p style="font-size: 12px;">(c)  UKRTRADE GROUP - 2022</p></a>
+                <p style="font-size: 12px;">(c)  UKRTRADE GROUP - 2022</p>
             </div>
             <div>
                 <a href="#"><p>Оплата</p></a>
@@ -247,9 +244,9 @@
                 <a href="#"><p>Питання та віповіді</p></a>
             </div>
             <div class="text-right">
-                <a href="#"><p style="font-size: 18px;">Графік роботи<br>з 9.00 до 20.00</p></a>
-                <a href="#"><p style="font-size: 20px; font-weight: 500;">+48 (57) 105-5718</p></a>
-                <a href="#"><p style="font-size: 18px;">ukrtrade.g@gmail.com</p></a>
+                <p style="font-size: 18px;">Графік роботи<br>з 9.00 до 20.00</p>
+                <a style="font-size: 20px; font-weight: 500;" href="tel:+48571055718">+48 (57) 105-5718</a>
+                <a style="font-size: 18px; margin-top: 17px;" href="mailto:ukrtrade.g@gmail.com">ukrtrade.g@gmail.com</a>
             </div>
         </div>
     </footer>
